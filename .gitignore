@@ -1,0 +1,6 @@
+# Esta carpeta contiene borradores y copias en conflicto que no deben subirse.
+# Se ignora todo por defecto y solo se permiten los archivos del proyecto.
+*
+!.gitignore
+!README.md
+!trabajo_limpio_2.mlx
