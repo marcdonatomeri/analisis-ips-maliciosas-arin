@@ -33,25 +33,20 @@ Todo el trabajo (código, gráficas y conclusiones) está en el Live Script [`tr
 
 Necesitas **MATLAB** (el proyecto se guardó con R2026a) y **Mapping Toolbox**, que se usa para `shaperead`, `mapshow` y `makesymbolspec`.
 
-Este repositorio **no incluye los datos ni las funciones auxiliares**, y el script no se ejecutará sin ellos. Deben estar en la misma carpeta que el `.mlx`, con esta estructura:
+El repositorio incluye el script y sus dos funciones auxiliares, pero **no los datos**, y el script no se ejecutará sin ellos. Consulta las [fuentes de datos](#fuentes-de-datos) y colócalos junto al `.mlx`, con esta estructura:
 
 ```text
 ├── trabajo_limpio_2.mlx
-├── LoadArin.m                  # no incluido: lee el fichero delegated en una tabla
-├── LeerRep.m                   # no incluido: lee los ficheros de reputación en una tabla
+├── LoadArin.m                  # lee el fichero delegated en una tabla
+├── LeerRep.m                   # lee los ficheros de reputación en una tabla
 ├── delegated_arin.txt
-├── reputation_2013
-├── reputation_2019
+├── reputation_2013.csv
+├── reputation_2019.csv
 ├── variables_2013/variables_2013.csv
 ├── variables_2019/variables_2019.csv
 ├── mapas/ne_110m_admin_0_countries.shp   # con sus archivos asociados
 └── vcdb/                       # incidentes en formato JSON
 ```
-
-Las dos funciones deben devolver estas columnas, que son las que usa el script:
-
-- `LoadArin`: `pais`, `tipo`, `ip`, `valor` y `estado`.
-- `LeerRep`: `IP`, `paises`, `ciudades` y `tipo`.
 
 ## Fuentes de datos
 
